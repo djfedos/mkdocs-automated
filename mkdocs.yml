@@ -1,0 +1,16 @@
+markdown_extensions:
+  - meta
+site_name: djfedos
+theme: material
+nav:
+  - Home page: 'index.md'
+  - Github profile: 'https://github.com/djfedos'
+  - LinkedIn profile: 'https://www.linkedin.com/in/djfedos'
+  - Tasker tutorial: https://yairdar.github.io/base-tutorials/a-tasker/index.html
+  - Devpod Tutorial: https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready.html
+  - djfedos-search: https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready.html
+  - todo app: https://github.com/djfedos/flask-based-todo-app
+  - Devpod: https://github.com/djfedos/flask-based-todo-app
+
+extra_css:
+  - css/extra.css
