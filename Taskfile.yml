@@ -39,10 +39,6 @@ tasks:
     cmds:
       # feel free to edit and add paths if necessary
       - mkdocs build
-    sources:
-      - ./docs/index.md
-    generates:
-      - ./site/index.html
 
   move-site:
     desc: 'for local machine only: move folder to github.io local repo'
@@ -73,3 +69,8 @@ tasks:
       - git add -A
       - git commit -m"Update docs site (by mkdocs-automated)"
       - git push
+
+  serve-sources:
+    desc: _
+    cmds:
+      - mkdocs serve
