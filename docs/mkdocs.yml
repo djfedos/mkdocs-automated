@@ -1,0 +1,10 @@
+markdown_extensions:
+  - meta
+site_name: djfedos-search
+theme: material
+nav:
+  - Me: 'index.md'
+  - My Github: 'https://github.com/djfedos'
+  - Me on LinkedIn: 'https://www.linkedin.com/in/djfedos' 
+extra_css:
+  - css/extra.css

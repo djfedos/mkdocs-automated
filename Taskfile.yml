@@ -1,0 +1,80 @@
+# https://taskfile.dev
+
+version: "3"
+# this Taskfile helps to prepare docs for publishing on GithubPages
+
+vars:
+  GREETING: |-
+    Usage:
+    on local machine use 'task p' or 'task prepub' to get docs ready to push 
+    to github.io.
+    for Jenkins-based CI CD use 'task build', 'task rename-site' and then 
+    'task tar' to get a nice single-file artifact
+  # tune the vars below for current project each time when you use this taskfile
+  TARGET_SITE_FOLDER: ~/djfedos/repos/djfedos.github.io
+
+tasks:
+  default:
+    desc: _
+    cmds:
+      - echo "{{.GREETING}}"
+      - task -a
+    silent: true
+
+  create-venv:
+    desc: _
+    taskfile: ./taskfiles/conda-venv.tasks.yaml
+    vars:
+      VENV_NAME: mkdocs-automated
+
+  resolve-deps:
+    desc: _
+    cmds:
+      - pip install mkdocs-material
+
+  build:
+    desc: build docs from markdown to html + css
+    cmds:
+      # feel free to edit and add paths if necessary
+      - cd docs && mkdocs build
+    status:
+      - test -d docs/site
+
+  rename-site:
+    desc: 'rename docs folder to match the github.io repo structure'
+    cmds:
+      - mv ./docs/site docs/djfedos-search
+    status:
+      - test -d docs/djfedos-search
+
+  tar:
+    desc: 'for Jenkins-based CI CD: pack a folder to a single tar file artifact'
+    cmds:
+      - tar -cf docs.tar docs/djfedos-search
+
+  purge-destination:
+    desc: 'for local machine only: purge local github.io repo'
+    cmds:
+      - rm -r ~/repos/djfedos.github.io/djfedos-search
+    status:
+      - test ! -d ~/repos/djfedos.github.io/djfedos-search
+
+  move-site:
+    desc: 'for local machine only: move folder to github.io local repo'
+    cmds:
+      - mv ./docs/djfedos-search ~/repos/djfedos.github.io
+    status:
+      - test -d ~/repos/djfedos.github.io/djfedos-search
+
+  prepub:
+    desc: 'for local machine only: prepare docs to be pushed to github.io'
+    cmds:
+      - task build
+      - task rename-site
+      - task purge-destination
+      - task move-site
+
+  p:
+    desc: 'a shorthand to prepub'
+    cmds:
+      - task prepub
