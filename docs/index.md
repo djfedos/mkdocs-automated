@@ -11,7 +11,7 @@ My name is Fedor Ivashchenko.
 
 I specialize in Test Automation.
 
-I work in [Yairdev](https://yairdar.github.io).
+I work in [YairDev](https://yairdar.github.io).
 
 ## My projects
 
@@ -31,7 +31,7 @@ Learn how to instantly prepare your environment for software development.
 [source code](https://github.com/djfedos/djfedos-search)
 
 A trie-based search suggestion engine implemented in Python.  
-Demo web UI is written in pure Javascript and backed with FastAPI.  
+Demo web UI is written in pure JavaScript and backed with FastAPI.  
 Tests are automated by means of GitHub actions.
 
 ### [**todo app**](https://github.com/djfedos/flask-based-todo-app)

@@ -1,7 +1,11 @@
 markdown_extensions:
   - meta
 site_name: djfedos
-theme: material
+theme:
+  name: material
+  favicon: 'assets/favicon.ico'
+  logo: 'assets/favicon-192.png'
+  
 nav:
   - Home page: 'index.md'
   - Github profile: 'https://github.com/djfedos'
