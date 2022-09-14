@@ -15,12 +15,12 @@ I work in [YairDev](https://yairdar.github.io).
 
 ## My projects
 
-### [**Tasker tutorial**](https://yairdar.github.io/base-tutorials/a-tasker/index.html)
+### [**Tasker tutorial**](https://yairdar.github.io/base-tutorials/a-taskfile/)
 
 [Tasker](https://taskfile.dev) is the most human-friendly automation tool in existence.  
 Attend this tutorial to master Tasker from scratch.
 
-### [**Devpod Tutorial**](https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready.html)
+### [**Devpod Tutorial**](https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready/)
 
 Learn how to instantly prepare your environment for software development.
 
@@ -47,7 +47,7 @@ automated with GitHub Actions and Tasker.
 
 Devpod is a tool that allows quick setup of software development environment.  
 My contribution includes adding features to the tool itself, updating documentation,  
-[creating tutorial](https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready.html)
+[creating tutorial](https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready)
 and writing automated tests.
 
 ## My stack
