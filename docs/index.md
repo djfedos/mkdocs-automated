@@ -47,7 +47,7 @@ automated with GitHub Actions and Tasker.
 
 Devpod is a tool that allows quick setup of software development environment.  
 My contribution includes adding features to the tool itself, updating documentation,  
-[creating tutorial](https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready)
+[creating tutorial](https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready/)
 and writing automated tests.
 
 ## My stack
