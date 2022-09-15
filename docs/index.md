@@ -15,9 +15,9 @@ I work in [YairDev](https://yairdar.github.io).
 
 ## My projects
 
-### [**Tasker tutorial**](https://yairdar.github.io/base-tutorials/a-taskfile/)
+### [**Taskfile tutorial**](https://yairdar.github.io/base-tutorials/a-taskfile/)
 
-[Tasker](https://taskfile.dev) is the most human-friendly automation tool in existence.  
+[Taskfile](https://taskfile.dev) is the most human-friendly automation tool in existence.  
 Attend this tutorial to master Tasker from scratch.
 
 ### [**Devpod Tutorial**](https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready/)
