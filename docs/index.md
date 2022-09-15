@@ -18,7 +18,7 @@ I work in [YairDev](https://yairdar.github.io).
 ### [**Taskfile tutorial**](https://yairdar.github.io/base-tutorials/a-taskfile/)
 
 [Taskfile](https://taskfile.dev) is the most human-friendly automation tool in existence.  
-Attend this tutorial to master Tasker from scratch.
+Attend this tutorial to master Taskfile from scratch.
 
 ### [**Devpod Tutorial**](https://yairdar.github.io/base-tutorials/b-devpod/devpod-get-env-ready/)
 
@@ -39,7 +39,7 @@ Tests are automated by means of GitHub actions.
 A sandbox for test automation.
 
 GitHub repo contains dockerized cypress-based e2e tests of the dockerized app  
-automated with GitHub Actions and Tasker.
+automated with GitHub Actions and Taskfile.
 
 ## My contribution
 
